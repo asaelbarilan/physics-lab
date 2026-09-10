@@ -4,3 +4,6 @@
 
 .person,.point-button{cursor:ns-resize;touch-action:none}.ray,.normal{pointer-events:none}.drag-hint{text-align:center;font-size:14px;color:#087775;margin:5px 12px 12px}.person:focus-visible{outline:2px solid #c68c17}.person.ghost{cursor:ns-resize}
 
+
+.person,.point-button,.eye-control{cursor:move;touch-action:none}.person.ghost{cursor:move}.drag-handle{touch-action:none}.drag-handle.vertical{cursor:ns-resize}.drag-handle rect{fill:#fff;stroke:#087d7c;stroke-width:2}.drag-handle path{fill:none;stroke:#087d7c;stroke-width:2;stroke-linecap:round}.eye-control:focus-visible,.drag-handle:focus-visible{outline:3px solid #c68c17;outline-offset:3px}.drag-handle:hover rect{fill:#ccece6}
+
