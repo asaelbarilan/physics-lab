@@ -1,0 +1,5 @@
+import { topics } from './data/topics';
+import PlaneMirror from './simulations/plane-mirror/PlaneMirror';
+export default function App() {
+  return <><header className="site-header"><a className="brand" href="#"><span className="brand-mark">✳</span> מעבדת פיזיקה</a><span className="header-note">מגלים. משנים. מבינים.</span><a href="#practice" className="header-link">לתרגול עצמי ←</a></header><main><nav className="topics" aria-label="תחומי הפיזיקה">{topics.map(t => <button key={t.name} className={t.available ? 'topic active' : 'topic'} disabled={!t.available} onClick={() => document.getElementById('lab')?.scrollIntoView({ behavior: 'smooth' })}><span className="topic-icon">{t.icon}</span><span>{t.name}</span>{!t.available && <small>בהמשך</small>}</button>)}</nav><section className="intro" id="lab"><div><div className="eyebrow">אופטיקה גיאומטרית / מעבדה 01</div><h1>מה באמת רואים במראה?</h1><p>שנו את הניסוי וגלו איך אור יוצר דמות מדומה.</p></div><span className="module-badge">מראה מישורית · חוק ההחזרה</span></section><PlaneMirror /></main><footer>מעבדת פיזיקה <span>לומדים דרך התנסות</span></footer></>;
+}
