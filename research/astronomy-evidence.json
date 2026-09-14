@@ -1,0 +1,203 @@
+{
+  "scope": "Two prioritized educational modules; focused reuse review",
+  "works": [
+    {
+      "id": "S1",
+      "title": "ViewSpace / NASA: Eagle Nebula",
+      "url": "https://viewspace.org/interactives/unveiling_invisible_universe/star_formation/eagle_nebula",
+      "category": "direct_solution",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Link as optional enrichment; Hebrew interface and requested controls are absent.",
+      "supported_claims": [
+        "Interactive observations at different wavelengths, not a cloud mass/density collapse model."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "Not established for source redistribution",
+      "compute": "not_reported",
+      "limitations": "Link as optional enrichment; Hebrew interface and requested controls are absent.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "S2",
+      "title": "MySimulator: Jeans Instability",
+      "url": "https://www.mysimulator.uk/space/galaxy-formation-physics/",
+      "category": "direct_solution",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Direct conceptual match; full page retrieval failed twice, license and equations could not be verified. Do not copy.",
+      "supported_claims": [
+        "Author advertises mass, radius, temperature, Jeans threshold and free-fall time."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "not_reported",
+      "compute": "not_reported",
+      "limitations": "Direct conceptual match; full page retrieval failed twice, license and equations could not be verified. Do not copy.",
+      "inspection_level": "abstract_only"
+    },
+    {
+      "id": "S3",
+      "title": "David Greenheck: WebGPU Black Hole",
+      "url": "https://github.com/dgreenheck/webgpu-black-hole",
+      "category": "direct_solution",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "MIT code available, but renderer is for appearance/lensing, not stellar collapse. Link as optional exploration; retain for future lensing module.",
+      "supported_claims": [
+        "README, shader source and LICENSE inspected: renderer uses physically-inspired raymarching and disk shading."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "https://github.com/dgreenheck/webgpu-black-hole",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "MIT; preserve copyright/license on adaptation",
+      "compute": "WebGPU/Three.js; device performance not independently measured",
+      "limitations": "MIT code available, but renderer is for appearance/lensing, not stellar collapse. Link as optional exploration; retain for future lensing module.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "S4",
+      "title": "Illinois: Stellar Structure and Evolution",
+      "url": "https://rainman.astro.illinois.edu/ddr/stellar/advanced.html",
+      "category": "direct_solution",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Useful future stellar evolution/H–R reference; no mass-density cloud controls. Runtime and reuse license not verified.",
+      "supported_claims": [
+        "Form accepts stellar mass and metallicity and evolves existing stars."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "not_reported",
+      "compute": "not_reported",
+      "limitations": "Useful future stellar evolution/H–R reference; no mass-density cloud controls. Runtime and reuse license not verified.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "P1",
+      "title": "OpenStax Astronomy 2e 21.1",
+      "url": "https://openstax.org/books/astronomy-2e/pages/21-1-star-formation",
+      "category": "foundational",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Basis for stages and explanatory copy; no imported artwork/code.",
+      "supported_claims": [
+        "Cold dense cloud cores can collapse; a protostar precedes sustained hydrogen fusion."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "CC BY 4.0 as identified by book footer",
+      "compute": "not_reported",
+      "limitations": "Basis for stages and explanatory copy; no imported artwork/code.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "P2",
+      "title": "OpenStax Astronomy 2e 21.2",
+      "url": "https://openstax.org/books/astronomy-2e/pages/21-2-the-h-r-diagram-and-the-study-of-stellar-evolution",
+      "category": "foundational",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Stage animation must not be presented as a measured timeline or exact core temperature.",
+      "supported_claims": [
+        "Gravitational contraction releases energy; later heat retention warms the protostar; contraction times depend on mass."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "CC BY 4.0 as identified by book footer",
+      "compute": "not_reported",
+      "limitations": "Stage animation must not be presented as a measured timeline or exact core temperature.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "P3",
+      "title": "OpenStax Astronomy 2e 24.5",
+      "url": "https://openstax.org/books/astronomy-2e/pages/24-5-black-holes",
+      "category": "foundational",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Mass-radius thought experiment. Do not imply Sun naturally forms black hole or draw a visible stellar interior after horizon formation.",
+      "supported_claims": [
+        "Nonrotating horizon radius is 2GM/c², approximately 3 km per solar mass."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "CC BY 4.0 as identified by book footer",
+      "compute": "not_reported",
+      "limitations": "Mass-radius thought experiment. Do not imply Sun naturally forms black hole or draw a visible stellar interior after horizon formation.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "P4",
+      "title": "C. Dominik: Molecular clouds lecture notes, section 2.2",
+      "url": "https://staff.fnwi.uva.nl/c.dominik/Teaching/SPF/02-molecular-clouds.pdf",
+      "category": "foundational",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Compute initial stability and a characteristic free-fall time, not the full duration to fusion.",
+      "supported_claims": [
+        "Isothermal Jeans mass and pressureless uniform-density free-fall time; magnetic/turbulent support neglected."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "not_reported; equations implemented independently",
+      "compute": "not_reported",
+      "limitations": "Compute initial stability and a characteristic free-fall time, not the full duration to fusion.",
+      "inspection_level": "resource_only"
+    },
+    {
+      "id": "P5",
+      "title": "NASA: Anatomy of a black hole",
+      "url": "https://science.nasa.gov/universe/black-holes/anatomy/",
+      "category": "foundational",
+      "year": null,
+      "source_type": "official_documentation",
+      "venue": "author/educational institution website",
+      "decision_relevance": "Show a schematic horizon boundary, not a claim to reproduce a telescope image.",
+      "supported_claims": [
+        "Event horizon, accretion disk and apparent shadow are distinct concepts."
+      ],
+      "datasets": "not_reported",
+      "metrics": "not_reported",
+      "code": "not_reported",
+      "data": "not_reported",
+      "weights": "not_applicable",
+      "licenses": "Use original copy and links only",
+      "compute": "not_reported",
+      "limitations": "Show a schematic horizon boundary, not a claim to reproduce a telescope image.",
+      "inspection_level": "resource_only"
+    }
+  ]
+}
