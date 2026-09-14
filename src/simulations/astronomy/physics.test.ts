@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { cloudModel, compactObject, formationStage, schwarzschildKm } from './physics';
+import { cloudModel, compactObject, formationStage, schwarzschildKm, densityChallenge, SOLAR_RADIUS_KM, MAX_STELLAR_RADIUS_KM } from './physics';
 describe('Schwarzschild compactness model',()=>{
   it('gives about 2.953 km per solar mass',()=>expect(schwarzschildKm(1)).toBeCloseTo(2.95334,4));
   it('scales linearly with mass',()=>{for(const m of [5,10,100])expect(schwarzschildKm(m)).toBeCloseTo(m*schwarzschildKm(1),10)});
@@ -16,4 +16,30 @@ describe('molecular cloud model',()=>{
   it('does not let a supported cloud advance to fusion',()=>{for(const p of [0,.2,.6,1])expect(formationStage(p,false)).toBe(0);expect([0,.2,.6,1].map(p=>formationStage(p,true))).toEqual([0,1,2,3])});
   it('validates inputs and clamps schematic progress',()=>{expect(()=>cloudModel(0,1e5)).toThrow();expect(()=>cloudModel(1,NaN)).toThrow();expect(()=>cloudModel(1,1e5,-1)).toThrow();expect(()=>formationStage(NaN,true)).toThrow();expect(formationStage(10,true)).toBe(3)});
 });
+
+
+describe('calculation challenge and stellar scales',()=>{
+  it('keeps exercise targets within the density controls over their full range',()=>{
+    for(let log=3;log<=6;log+=.01){
+      const task=densityChallenge(3,10**log);
+      expect(task.targetDensity).toBeGreaterThanOrEqual(1e3);
+      expect(task.targetDensity).toBeLessThanOrEqual(1e6);
+      expect(task.expectedMass/task.initialMass).toBeCloseTo(1/Math.sqrt(task.factor),12);
+    }
+  });
+  it('allows a density experiment to cross the collapse threshold',()=>{
+    const task=densityChallenge(.6,1e5);
+    expect(cloudModel(task.mass,task.density).unstable).toBe(false);
+    expect(cloudModel(task.mass,task.targetDensity).unstable).toBe(true);
+  });
+  it('covers stellar radii and the horizon of each allowed mass',()=>{
+    expect(SOLAR_RADIUS_KM).toBe(695700);
+    for(const m of [1,10,100]){
+      expect(compactObject(m,MAX_STELLAR_RADIUS_KM).hasHorizon).toBe(false);
+      expect(compactObject(m,1).hasHorizon).toBe(true);
+      expect(schwarzschildKm(m)).toBeLessThan(.1*SOLAR_RADIUS_KM);
+    }
+  });
+});
+
 

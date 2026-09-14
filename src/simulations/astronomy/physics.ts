@@ -38,3 +38,13 @@ export function formationStage(progress:number,unstable:boolean) {
 }
 export const STAR_STAGES = ['ענן קר וצפוף','קריסה כבידתית','פרוטו־כוכב','היתוך מימן מתמשך'];
 
+
+export const SOLAR_RADIUS_KM = 695700;
+export const MAX_STELLAR_RADIUS_KM = 1000 * SOLAR_RADIUS_KM;
+export function densityChallenge(mass:number,density:number) {
+  const factor=density<=250000?4:.25;
+  return {mass,density,factor,targetDensity:density*factor,
+    initialMass:cloudModel(mass,density).jeansMassSolar,
+    expectedMass:cloudModel(mass,density*factor).jeansMassSolar};
+}
+

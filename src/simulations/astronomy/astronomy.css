@@ -3,3 +3,20 @@
 
 @media(max-width:760px){.space-label{font-size:24px}.space-caption{font-size:21px}}
 
+
+.jeans-lesson,.stellar-radius{padding:26px;margin-top:24px}
+.jeans-lesson p,.stellar-radius p{line-height:1.8;color:#456271}
+.jeans-lesson h2{margin-top:8px}.jeans-formulas{display:grid;grid-template-columns:1fr 1.5fr;gap:24px}
+.jeans-formulas>div{background:#eff6f7;border-radius:10px;padding:18px;min-width:0}
+.formula{font-size:24px;text-align:center;padding:14px 0;overflow-x:auto;max-width:100%;white-space:nowrap;color:#173c52}
+.small-formula{font-size:20px}.normalized{background:#f1f6f9;border-radius:8px}
+.formula-key{font-size:15px}.jeans-live{background:#e4f3ed;border-radius:8px;padding:16px;line-height:1.8}
+.jeans-exercise{margin-top:28px;border-top:1px solid #ccdee3;padding-top:20px}
+.jeans-exercise li{line-height:1.9;margin-bottom:10px}.jeans-answer{display:flex;gap:16px;flex-wrap:wrap;align-items:end}
+.jeans-answer label{display:flex;flex-direction:column;gap:8px;max-width:100%}
+.jeans-answer input,.jeans-answer select{font:inherit;padding:10px;border:1px solid #b5cdd5;border-radius:7px;max-width:100%;min-width:0;background:white;color:#173c52}
+.jeans-answer input{width:220px;direction:ltr}.jeans-feedback{border-inline-start:4px solid #087d7c;background:#eef7f5;padding:3px 18px}
+.experiment-status{font-size:15px}.stellar-radius .mass-examples{margin:0}
+@media(max-width:760px){.jeans-lesson,.stellar-radius{padding:18px}.jeans-formulas{grid-template-columns:1fr;gap:12px}.formula{font-size:19px}.small-formula{font-size:18px}.astro-controls{grid-template-columns:1fr}.jeans-answer{align-items:stretch;flex-direction:column}}
+
+.normalized{display:flex;flex-wrap:wrap;justify-content:center;gap:5px 7px;white-space:normal}.normalized>span{white-space:nowrap}
