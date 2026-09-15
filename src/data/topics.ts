@@ -1,2 +1,3 @@
-export const topics = [ { name: 'אופטיקה', icon: '◈', available: true }, { name: 'מכניקה', icon: '↗', available: false }, { name: 'אנרגיה', icon: 'ϟ', available: false }, { name: 'חשמל', icon: '⌁', available: false }, { name: 'אסטרונומיה', icon: '☾', available: true } ];
+export const topics = [ { name: 'אופטיקה', icon: '◈', available: true }, { name: 'מכניקה', icon: '↗', available: false }, { name: 'אנרגיה', icon: 'ϟ', available: true }, { name: 'חשמל', icon: '⌁', available: false }, { name: 'אסטרונומיה', icon: '☾', available: true } ];
+
 
